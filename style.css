@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@400;600&family=Ubuntu&display=swap');
+:root{
+    --text: 'Ubuntu', sans-serif;
+    --heading:'Oswald', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    width: 50%;
+    border: 1px solid #9e9c9c;
+}
+.main-con h1{
+    font-family: var(--heading);
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+p{   padding: 1rem;
+     font-family: var(--heading);
+     font-size: 1.5rem;
+     color: rgb(108, 105, 105);
+     margin-bottom: 2rem;
+     text-align: left;
+}
+#setLimit{
+    width: 20%;
+    border: 1px solid rgb(108, 105, 105);
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#textarea{
+    width: 90%;
+    min-height: 20rem;
+    resize: none;
+    outline: none;
+    border: 1px solid rgb(108, 105, 105);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.8rem;
+    font-family: var(--text);
+    color: black;
+    margin-bottom: 0;
+}
+#copyBtn{
+    border: none;
+    padding: 1rem 1.5rem;
+    background-color: rgb(131, 228, 131);
+    border-radius: 8px;
+    margin: -4rem auto;
+    cursor: pointer;
+}
+.text-count{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8rem auto 0 auto;
+}
+.text-count p {
+    color: black;
+    font-family: var(--heading);
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    html{
+        font-size: 55%;
+    }
+    .main-con{
+        width: 85%;
+    }
+    #textarea{
+        min-height: 25rem;
+    }
+    #copyBtn{
+        margin-top: -5rem;
+    }
+    #setLimit{
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .main-con{
+        margin-top: 1.8rem;
+        width: 98%;
+    }
+    #textarea{
+        width: 98%;
+        min-height: 30rem;
+    }
+    .text-count{
+        flex-direction: column;
+    }
+  }
