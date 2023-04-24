@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TextCount App</title>
+    <title>WordCount App</title>
 </head>
 
 <body>
     <div class="main-con">
-        <h1>Welcome to CountText App</h1>
+        <h1>Welcome to WordCount App</h1>
         <p> Set Text Limit | Copy your written text to clipboard | very usefull to write
             social media posts or bio.</p>
-
-        <input type="number" name="" id="setLimit" autofocus placeholder="set text limit">
+        <p id="showExceed"></p>
+        <input type="number" name="" id="setLimit" autofocus placeholder="set words limit">
         <textarea id="textarea"  placeholder="write your text here" disabled></textarea>
         <button id="copyBtn">Copy Text</button>
         <div class="text-count">
-            <p>Text Count : <span id="showCount"> 0</span></p>
-            <p>Remaining :<span id="showRemaining"> Set Limit</span></p>
+            <p>Words Count : <span id="showCount"> 0 </span></p>
+            <p>Remaining : <span id="showRemaining"> Set Limit </span></p>
         </div>
     </div>
 

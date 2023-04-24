@@ -12,7 +12,9 @@
 html {
     font-size: 62.5%;
 }
-
+body{
+    background-color: rgb(239, 242, 244);
+}
 .main-con {
     display: flex;
     flex-direction: column;
@@ -30,12 +32,17 @@ html {
     text-transform: uppercase;
     text-align: center;
 }
-p{   padding: 1rem;
+p{   padding: 0.5rem 1rem;
      font-family: var(--heading);
      font-size: 1.5rem;
      color: rgb(108, 105, 105);
      margin-bottom: 2rem;
      text-align: left;
+}
+#showExceed{
+    color: red;
+    font-weight: bolder;
+    display: none;
 }
 #setLimit{
     width: 20%;
@@ -51,13 +58,9 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
 #textarea{
     width: 90%;
-    min-height: 20rem;
+    min-height: 15rem;
     resize: none;
     outline: none;
     border: 1px solid rgb(108, 105, 105);
